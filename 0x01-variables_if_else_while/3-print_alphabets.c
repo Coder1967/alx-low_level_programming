@@ -14,11 +14,10 @@ int main(void)
 		putchar(ch);
 	}
 
-	char alps;
-
-	for (alps = 'A'; alps <= 'Z'; alps++)
+	for (ch = 'A'; ch <= 'Z'; ch++)
 	{
-		putchar(alps);
+		putchar(ch);
 	}
+	return (0);
 }
 
