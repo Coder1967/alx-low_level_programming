@@ -1,9 +1,9 @@
 #include<stdio.h>
-#include<stdlib.h>
+#include<stdlib>
 /**
- * main - Entry point
+ * main - Entry
  *
- * Return: Always 0(success)
+ * Return:always 0(success)
  */
 int main(void)
 {
@@ -13,13 +13,12 @@ int main(void)
 	{
 		putchar(ch);
 	}
-	
-	char alp;
 
-	for (alp = 'A'; alp <= 'Z'; alp++)
+	char alps;
+
+	for (alps = 'A'; alps <= 'Z'; alps++)
 	{
-		putchar(alp);
+		putchar(alps);
 	}
-	putchar('\n');
-	return (0);
 }
+
