@@ -6,16 +6,7 @@
  *
  * Return: Always 0(success)
  */
-int main(void)
-{
-	char firstAlpha = 'a';
-	char lastAlpha = 'z';
 
-	print_alphabet(firstAlpha, lastAlpha);
-
-
-	return (0);
-}
 
 void print_alphabet(char ch, char end)
 {
@@ -30,4 +21,4 @@ void print_alphabet(char ch, char end)
 
 	return;
 
-}
+
