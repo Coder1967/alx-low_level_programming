@@ -2,8 +2,9 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _islower(int c) - entry point
- *
+ * _islower - entry point
+ *  
+ * @c: contains values to be compared
  * Return: 0 or 1
  */
 int _islower(int c)
