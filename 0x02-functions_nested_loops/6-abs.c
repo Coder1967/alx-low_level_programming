@@ -3,14 +3,14 @@
 #include <stdlib.h>
 /**
  * _abs Entry point
- * @n: value to be compared
+ * @n:value to be compared
  * Return: Always 0
  */
 int _abs(int n)
 {
 	if (n < 0)
 	{
-		return (-1)*n;
+		return ((-1)*n);
 	}
 	else if ( n == 0)
 	{
