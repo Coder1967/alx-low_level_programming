@@ -9,22 +9,24 @@
 int main(void)
 {
 	char firstAlpha = 'a';
+	char lastAlpha = 'z';
 
-	print_alphabet(firstAlpha);
+	print_alphabet(firstAlpha, lastAlpha);
 
-	putchar('\n');
 
 	return (0);
 }
 
-void print_alphabet(char ch)
+void print_alphabet(char ch, char end)
 {
-	while (ch <= 'z')
+	while (ch <= end)
 	{
 		putchar(ch);
 
 		++ch;
 	}
+
+	putchar('\n');
 
 	return;
 
