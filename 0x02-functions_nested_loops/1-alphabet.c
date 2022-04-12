@@ -9,14 +9,13 @@
 int main(void)
 {
 
-	print_alphabet();
+	print_alphabet('a');
 
 	return (0);
 }
 
-void print_alphabet()
+void print_alphabet(char ch)
 {
-	char ch = 'a';
 
 	while (ch <= 'z')
 	{
