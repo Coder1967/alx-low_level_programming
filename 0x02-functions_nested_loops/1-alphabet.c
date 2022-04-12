@@ -11,6 +11,14 @@ int main(void)
 	char firstAlpha = 'a';
 
 	print_alphabet(firstAlpha);
+	while (firstAlpha <= 'z')
+	{
+		putchar(firstAlpha);
+
+			++firstAlpha;
+	}
+
+	putchar('\n');
 
 	return (0);
 }
@@ -18,12 +26,7 @@ int main(void)
 void print_alphabet(char ch)
 {
 
-	while (ch <= 'z')
-	{
-		putchar(ch);
 
-		++ch;
-	}
-	putchar('\n');
+
 	return;
 }
