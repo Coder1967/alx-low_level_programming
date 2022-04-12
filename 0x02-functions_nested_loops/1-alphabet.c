@@ -8,8 +8,9 @@
  */
 int main(void)
 {
+	char firstAlpha = 'a';
 
-	print_alphabet('a');
+	print_alphabet(firstAlpha);
 
 	return (0);
 }
