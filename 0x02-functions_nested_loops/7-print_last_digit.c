@@ -3,8 +3,8 @@
 #include "main.h"
 /**
  * print_last_digit - Entry point
- * @n:compare return of digits 
- * Return:Always 0(success)
+ * @n: Value to be compared
+ * Return: Always 0(success)
  */
 int print_last_digit(int n)
 {
