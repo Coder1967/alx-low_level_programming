@@ -2,13 +2,12 @@
 #include "main.h"
 #include <stdlib.h>
 /**
+ * _islower(int c) - entry point
  *
- *
- *
+ * Return: 0 or 1
  */
 int _islower(int c)
 {
-	int num;
-	(c >= 'a' && c <= 'z') ?  num = 1 : num = 0;
-	return num;
+	
+	(c >= 'a' && c <= 'z') ?  return(1) : return(0);
 }
