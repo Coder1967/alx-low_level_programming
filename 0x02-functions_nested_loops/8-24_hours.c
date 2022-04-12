@@ -1,7 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
-
+/**
+ * jack_bauer - Entry point
+ *
+ * Return:Always 0
+ */
 void jack_bauer(void)
 {
 	int i;
@@ -11,8 +15,13 @@ void jack_bauer(void)
 	{
 		for (j = 01; j <= 59; j++)
 		{
-			printf("%d : %d", i, j);
+			_putchar(i / 10 + '0');
+			_putchar(i % 10 + '0');
+			_putchar(':');
+			_putchar(j / 10 + '0');
+			_putchar(j % 10 + '0');
+			_putchar('\n');		
 		}
-		putchar('\n');
+		
 	}
 }
