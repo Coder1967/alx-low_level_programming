@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * function - Entry point
+ * function - print_alphabet
  *
- * Return: Always 0
+ * Return: Always 0(success)
  */
 void print_alphabet(void)
 {
