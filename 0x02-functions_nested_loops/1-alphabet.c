@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * function - print_alphabet
- *
- * Return: Always 0(success)
+ * main - entry block
+ *@void: no argument
+ * Return: 0
  */
 void print_alphabet(void)
 {
