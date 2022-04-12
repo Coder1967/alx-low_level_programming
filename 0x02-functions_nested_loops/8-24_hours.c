@@ -9,7 +9,7 @@ void jack_bauer(void)
 
 	for (i = 00; i <= 23; i++)
 	{
-		for (j = 01; j <= 59 j++)
+		for (j = 01; j <= 59; j++)
 		{
 			printf("%d : %d", i, j);
 		}
