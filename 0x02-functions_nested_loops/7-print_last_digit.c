@@ -4,7 +4,7 @@
 /**
  * print_last_digit - Entry point
  * @n:compare 
- * Return: Always 0
+ * Return:Always 0(success)
  */
 int print_last_digit(int n)
 {
