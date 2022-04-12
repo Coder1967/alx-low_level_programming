@@ -6,7 +6,7 @@
  *
  * Return: 0(success)
  */
-int main(void)
+void print_alphabet_x10(void)
 {
 	int rep = 1;
 	while (rep <= 10)
@@ -20,5 +20,5 @@ int main(void)
 		putchar('\n');
 		++rep;
 	}
-	return (0);
+	
 }
