@@ -3,7 +3,6 @@
 #include <stdlib.h>
 /**
  * _islower - entry point
- *  
  * @c: contains values to be compared
  * Return: 0 or 1
  */
