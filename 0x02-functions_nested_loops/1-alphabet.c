@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+void print_alphabet();
 /**
  * main - Entry point
  *
@@ -7,12 +8,22 @@
  */
 int main(void)
 {
-	char cha = 'a';
 
-	while (cha <= 'z')
-	{
-		putchar(cha);
-		++cha;
-	}
+	print_alphabet();
+
 	return (0);
+}
+
+void print_alphabet()
+{
+	char ch = 'a';
+
+	while (ch <= 'z')
+	{
+		putchar(ch);
+
+		++ch;
+	}
+	putchar('\n');
+	return;
 }
