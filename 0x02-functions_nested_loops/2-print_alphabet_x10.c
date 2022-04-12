@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * void print_alphabet_x10  - Entry point
+ * print_alphabet_x10  - Entry point
  *
  * Return: 0(success)
  */
@@ -22,6 +22,5 @@ void print_alphabet_x10(void)
 		putchar('\n');
 
 		++rep;
-
 	}	
 }
