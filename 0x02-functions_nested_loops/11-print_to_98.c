@@ -3,6 +3,7 @@
 #include "main.h"
 /**
  * print_to_98 - Entry point
+ * @n: defines int
  *
  * Return:Always 0
  */
