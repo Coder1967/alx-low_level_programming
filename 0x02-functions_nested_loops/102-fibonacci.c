@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * fibonacci - Entry point
+ * main - Entry point
  * @n: value to be compared
  * Return: Always 0
  */
