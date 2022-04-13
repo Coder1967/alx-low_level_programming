@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * fibonacci - Entry point
+ * @n: value to be compared
  * Return: Always 0
  */
 void fibonacci(int n)
@@ -14,7 +15,7 @@ void fibonacci(int n)
 		printf("%d", c);
 		a = b;
 		b = c;
-		if ( c < 0)
+		if (c < 0)
 		{
 			c = -1 * c;
 		}
@@ -25,9 +26,10 @@ void fibonacci(int n)
 		}
 	}
 }
-int main()
+int main(void)
 {
 	int n = 50;
+
 	fibonacci(n);
-	return 0;
+	return (0);
 }
