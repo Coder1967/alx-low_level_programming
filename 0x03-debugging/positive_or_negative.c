@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 #include "main.h"
 /**
  * positive_or_negative - Entry point
@@ -7,6 +8,9 @@
  */
 void positive_or_negative(int i)
 {
+	srand(time(0));
+	
+
 	if ( i < 0)
 	{
 		printf("%d is negative\n", i);
@@ -15,4 +19,5 @@ void positive_or_negative(int i)
 	{
 		printf("%d is positive\n", i);
 	}
+	
 }
