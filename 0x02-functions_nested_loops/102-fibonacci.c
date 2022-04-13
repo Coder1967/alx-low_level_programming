@@ -1,4 +1,8 @@
 #include <stdio.h>
+/**
+ * main - Entry point
+ * Return: Always 0
+ */
 void fibonacci(int n)
 {
 	int a = 1, b = 2, c, i;
@@ -10,9 +14,9 @@ void fibonacci(int n)
 		printf("%d", c);
 		a = b;
 		b = c;
-		if ( c == -1109825406)
+		if ( c < 0)
 		{
-			continue;
+			c = -1 * c;
 		}
 		else
 		{
