@@ -11,10 +11,10 @@ int _isupper(int c)
 
 	if (isupper(c))
 	{
-		letter = 1;
+		return (1);
 	}
 	else
 	{
-		letter = 0;
+		return (0);
 	}
 }
