@@ -1,9 +1,7 @@
 #include "main.h"
 #include <ctype.h>
 /**
- * _isupper - Function to check for uppercases
- * @c: variable to store value
- * Return: 0
+ * _supper - Function to check for uppercases
  */
 int _isupper(int c)
 {
