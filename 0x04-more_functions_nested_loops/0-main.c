@@ -2,21 +2,17 @@
 #include <stdio.h>
 
 /**
- * ma - Check the code
+ * main - Check the code.
  *
- * Return: Always 0
+ * Return: Always 0.
  */
 int main(void)
 {
 	char c;
 
 	c = 'A';
-
 	printf("%c: %d\n", c , _isupper(letter));
-
 	c = 'a';
-
 	printf("%c: %d\n", c, _isupper(letter));
-
 	return (0);
 }
