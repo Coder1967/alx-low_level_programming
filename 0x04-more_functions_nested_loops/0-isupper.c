@@ -18,6 +18,7 @@ int _isupper(int c)
 	{
 		letter = 0;
 	}
+
 	return (letter);
 }
 		
