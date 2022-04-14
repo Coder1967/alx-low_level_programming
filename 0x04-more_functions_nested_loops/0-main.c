@@ -14,5 +14,6 @@ int main(void)
 	printf("%c: %d\n", c , _isupper(letter));
 	c = 'a';
 	printf("%c: %d\n", c, _isupper(letter));
+
 	return (0);
 }
