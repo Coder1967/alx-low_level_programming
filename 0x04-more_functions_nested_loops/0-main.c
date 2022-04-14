@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
  * main - Check the code
  *
@@ -8,7 +9,6 @@
 int main(void)
 {
 	char c;
-
 	c = 'A';
 	printf("%c: %d\n", c , _isupper(letter));
 	c = 'a';
