@@ -1,10 +1,12 @@
 #include "main.h"
 /** 
- *  print_square - prints a square 
- *  @size: print size 
- *  Return: Always 0. */
+ * print_square - prints a square 
+ * @size: print size 
+ * Return: Always 0. 
+ */
 
-void print_square(int size){
+void print_square(int size)
+{
 
 	int i;
 	int k;
@@ -15,7 +17,9 @@ void print_square(int size){
 		{
 			for (k = 0; k < size; k++)
 			{
-				_putchar (35);}_putchar ('\n');
+				_putchar (35);
+			}
+			_putchar ('\n');
 		}
 	}
 		else
