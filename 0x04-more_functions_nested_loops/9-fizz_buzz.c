@@ -9,8 +9,7 @@ int main(void)
 	int a;
 	int b;
 
-	for (a = 1; a <= 4; a++)
-	{
+	
 		for (b = 1; b <= 100; b++)
 		{
 			if ( b % 3 == 0 && b % 5 == 0)
@@ -29,9 +28,10 @@ int main(void)
 			{
 				printf("%d ", b);
 			}
+			printf("\n");
 		}
-		printf("\n");
-	}
-	printf("\n");
+	
+		return (0);
+	
 }
 				
