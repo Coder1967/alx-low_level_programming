@@ -10,26 +10,24 @@ int main(void)
 
 	for (a = 1; a <= 100; a++)
 	{
-		if (a % 3 == 0 && a %5 == 0)
+		if (a % 3 == 0 && a % 5 == 0)
 		{
-			printf("FizzBuzz\t");
+			printf("FizzBuzz ");
 		}
 		else if (a % 3 == 0)
 		{
-			printf("Fizz\t");
+			printf("Fizz ");
 		}
 		else if (a % 5 == 0)
 		{
-			puts("Buzz\t");
+			puts("Buzz ");
 		}
 		else
 		{
-			printf("%d\t", a);
+			printf("%2d", a);
 		}
 	}
 	printf("\n");
 
 	return (0);
 }
-
-	
