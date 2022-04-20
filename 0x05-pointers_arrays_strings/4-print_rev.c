@@ -20,5 +20,6 @@ void print_rev(char *s)
 		printf("%c", s[(a - 1)]);
 		a--;
 	}
+	printf("\n");
 }
 
