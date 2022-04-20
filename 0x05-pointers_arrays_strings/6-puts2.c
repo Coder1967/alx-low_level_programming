@@ -17,6 +17,6 @@ void puts2(char *str)
 
 	for (u = 0; u <= j; u++)
 	{
-		printf("%c", str[(u + 1)]);
+		printf("%c", str[(u + 2)]);
 	}
 }
