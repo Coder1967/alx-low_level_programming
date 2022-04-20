@@ -8,6 +8,6 @@ void rev_string(char *s)
 
 	while (i >= 0)
 	{
-		printf("%d", s[i]);
+		printf("%c", s[i]);
 	}
 }
