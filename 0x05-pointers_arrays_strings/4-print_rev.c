@@ -15,13 +15,10 @@ void print_rev(char *s)
 		a++;
 	}
 
-	int i;
-
-	i = a -1;
-	while(i >= 0)
+	while((a - 1) >= 0)
 	{
-		printf("%c", s[i]);
-		i--;
+		printf("%c", s[(a - 1)]);
+		a--;
 	}
 }
 
