@@ -23,6 +23,5 @@ void puts2(char *str)
 			continue;
 		}
 	}
-	
 		printf("\n");
 }
