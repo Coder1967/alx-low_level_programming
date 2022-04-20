@@ -11,7 +11,10 @@
 
 int _strlen(char *s)
 {
-	printf("%d", _strlen(s));
+	int i;
 
-	return (0);
+	for(i = 0; s[i] != '\0'; i++)
+	{
+	}
+	return i;
 }
