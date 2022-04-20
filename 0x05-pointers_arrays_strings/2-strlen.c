@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio>
+#include <strings.h>
 #include <string.h>
 #include <stdlib.h>
 /**
@@ -9,6 +11,7 @@
 
 int _strlen(char *s)
 {
-	int main = _strlen(s);
-	return main;
+	printf("%d", strlen(s));
+
+	return (0);
 }
