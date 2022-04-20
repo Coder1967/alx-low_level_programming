@@ -8,14 +8,12 @@
  */
 void puts2(char *str)
 {
-	int j;
 	int u;
 
 	printf("%c", str[0]);
 
-	j = strlen(str) - 1;
 
-	for (u = 0; u <= j; u++)
+	for (u = 0; u <= 10; u++)
 	{
 		printf("%c", str[(u + 2)]);
 	}
