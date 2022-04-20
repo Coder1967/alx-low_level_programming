@@ -6,7 +6,7 @@
 /**
  * _strlen - function to count characters in a string
  * @s: string to be cunted
- * REturn: value
+ * Return: void that means answer correct
  */
 
 int _strlen(char *s)
