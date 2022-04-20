@@ -9,6 +9,7 @@
 void puts2(char *str)
 {
 	printf("%c", str[0]);
+
 	int u;
 	int j = strlen(str) - 1;
 
