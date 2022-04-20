@@ -1,2 +1,2 @@
-int _putchar(char c);
+int _putchar(int c);
 void reset_to_98(int *c);
