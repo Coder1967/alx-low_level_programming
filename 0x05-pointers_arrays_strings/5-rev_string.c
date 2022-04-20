@@ -4,11 +4,6 @@
 
 void rev_string(char *s)
 {
-	int i = strlen(s) - 1;
-
-	while (i >= 0)
-	{
-		s[i];
-		i--;
-	}
+	strrev(s);
 }
+
