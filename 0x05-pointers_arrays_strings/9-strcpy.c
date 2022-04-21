@@ -10,6 +10,6 @@ char *_strcpy(char *dest, char *src)
 	char *ch = src;
 	dest = ch;
 
-	printf("%s", dest);
+	printf("%s\0", dest);
 	return src;
 }
