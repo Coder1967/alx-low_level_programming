@@ -15,8 +15,6 @@ int is_numerical(unsigned int n)
 
 }
 
-
-
 /**
  * _atoi - function
  * @s: variable for string
@@ -32,20 +30,14 @@ int _atoi(char *s)
 	int sign;
 
 	sign = 1;
-
 	number = 0;
-
 	for (i = 0; s[i] != '\0'; i++)
 
 	{
-
 		if (is_numerical(s[i]))
-
 		{
 
 			number = (s[i] - 48) + number * 10;
-
-
 
 			if (s[i + 1] == ' ')
 
@@ -63,9 +55,5 @@ int _atoi(char *s)
 
 	}
 
-
-
 	return (number * sign);
-
-
 }
