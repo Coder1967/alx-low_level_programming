@@ -8,7 +8,7 @@
  */
 char *string_toupper(char *str)
 {
-	char sd[1000];
+	char sd[10000];
 	int i;
 
 	for (i = 0; i < (int)strlen(str); i++)
