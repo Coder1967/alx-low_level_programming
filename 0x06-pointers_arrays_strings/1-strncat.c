@@ -6,8 +6,9 @@
  * @dest: first variable
  * @src: sencond variable
  * @n: int variable
+ * Return: strncat value
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	return(strncat(dest, src, n));
+	return(strncat (dest, src, n));
 }
