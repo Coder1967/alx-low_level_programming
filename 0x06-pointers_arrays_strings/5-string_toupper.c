@@ -11,7 +11,7 @@ char *string_toupper(char *str)
 	char sd[1000];
 	int i;
 
-	for (i = 0; i < strlen(str); i++)
+	for (i = 0; i < (int)strlen(str); i++)
 	{
 		sd[i] = toupper(str[i]);
 	}
