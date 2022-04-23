@@ -7,31 +7,23 @@
  */
 char *leet(char *s)
 {
-	int i = 0;
+	int a = 0, b = 0, l = 5;
+	char r[5] = {'A', 'E', 'O', 'T', 'L'};
+	char n[5] = {'4', '3', '0', '7', '1'};
 
-	while (i < (int)strlen(s))
+	while (s[a])
 	{
-		if (s[i] == 'a' || s[i] == 65)
+		b = 0;
+
+		while (b < l)
 		{
-			s[i] = '4';
+			if (s[a] == r[b] || s[a] - 32 == r[b])
+			{
+				s[a] = n[b];
+			}
+			b++;
 		}
-		else if (s[i] == 'e' || s[i] == 'E')
-		{
-			s[i] = '3';
-		}
-		else if (s[i] == 'o' || s[i] == 'O')
-		{
-			s[i] = '0';
-		}
-		else if (s[i] == 't' || s[i] == 'T')
-		{
-			s[i] = '7';
-		}
-		else if (s[i] == 'l' || s[i] == 'L')
-		{
-			s[i] = '1';
-		}
-		i++;
+		a++;
 	}
-	 return (s);
-}	 
+	return (s);
+}
