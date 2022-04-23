@@ -5,7 +5,7 @@
  * @n:var2
  * Return: value
  */
-void reverse_array(int *a, int n);
+void reverse_array(int *a, int n)
 {
 	int i;
 	int arr[n];
