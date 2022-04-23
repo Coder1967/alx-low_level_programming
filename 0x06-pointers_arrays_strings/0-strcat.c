@@ -1,5 +1,6 @@
 #include <string.h>
 #include <stdio.h>
+#include "main.h"
 /**
  * _strcat - function to concatenatestrings
  * @dest: variable to store first string
