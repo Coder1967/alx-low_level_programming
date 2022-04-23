@@ -3,6 +3,7 @@
 /**
  * cap_string - function
  * @s: variable
+ * Return: value
  */
 char *cap_string(char *s)
 {
