@@ -16,7 +16,7 @@ char *string_toupper(char *str)
 		sd[i] = toupper(str[i]);
 	}
 
-	strcpy(str,sd);
+	strcpy(str, sd);
 	return (str);
 }
 
