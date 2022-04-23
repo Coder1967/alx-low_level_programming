@@ -8,9 +8,8 @@
 char *leet(char *s)
 {
 	int i = 0;
-	char c;
 
-	while (i < strlen(s))
+	while (i < (int)strlen(s))
 	{
 		if (s[i] == 'a' || s[i] == 65)
 		{
