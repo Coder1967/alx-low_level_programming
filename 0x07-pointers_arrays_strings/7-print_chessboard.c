@@ -1,5 +1,9 @@
 #include <stdio.h>
-
+/**
+ * print_chessboard - function
+ * @a: var
+ * Return: nothing
+ */
 void print_chessboard(char (*a)[8])
 {
 	int i, j;
