@@ -5,6 +5,7 @@
  * @s: var to store string
  * @b: a char var
  * @n: a int var
+ * Return: nothing
  */
 char *_memset(char *s, char b, unsigned int n)
 {
