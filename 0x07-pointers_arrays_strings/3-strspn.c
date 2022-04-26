@@ -4,6 +4,7 @@
  * _strspn - function
  * @s: var1
  * @accept: var2
+ * Return: str
  */
 unsigned int _strspn(char *s, char *accept)
 {
