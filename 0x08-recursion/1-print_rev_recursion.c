@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * _print_rev_recursion
+ * _print_rev_recursion - function to reverse string
  * @s: variable 1
  * Return: nothing
  */
