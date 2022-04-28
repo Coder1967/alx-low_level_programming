@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+/**
+ * factorial - function to calculate fctporial of n
+ * @n; parameter to receive argument
+ */
 int factorial(int n)
 {
 	if (n == 0 || n == 1)
