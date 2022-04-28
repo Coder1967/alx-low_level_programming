@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
  * factorial - function to calculate fctporial of n
- * @n; parameter to receive argument
+ * @n: parameter to receive argument
+ * Return: int
  */
 int factorial(int n)
 {
