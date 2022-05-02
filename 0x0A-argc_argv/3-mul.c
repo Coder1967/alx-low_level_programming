@@ -4,10 +4,10 @@
 /**
  * main - function
  * @argc: argument counter
- * @agrv: argument vector
+ * @argv: argument vector
  * Return:0
  */
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int mul = 1;
 	int i;
