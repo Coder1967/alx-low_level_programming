@@ -2,11 +2,11 @@
 /**
  * main - function main
  * @argc:argument count
- * @agrv:argument vector
+ * @argv:argument vector
  * Return: 0
  */
 int main(int argc, char *agrv)
 {
-	printf("%d\n", argc);
+	printf("%d\n", argc - 1);
 	return (0);
 }
