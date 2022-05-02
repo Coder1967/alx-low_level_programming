@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+ * main - function
+ * @argc: argument counter
+ * @argv: argument vector
+ * Return:0
+ */
 int main(int argc, char *argv[])
 {
 	int i;
@@ -11,7 +16,7 @@ int main(int argc, char *argv[])
 	for (i = 1; i < argc; i++)
 	{
 		n = atoi(argv[i]);
-		if (n > 0 && n < 50000)
+		if (n > 0 && n < 50000000)
 		{
 			total += n;
 		}
