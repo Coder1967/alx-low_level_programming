@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * @agrc:argument count
- * @agrv:argument vector
+ * @argc:argument count
+ * @argv:argument vector
  * main - function
  * Return:0
  */
-int main(int agrc, *char agrv[])
+int main(int argc, char *argv[])
 {
-	printf("%s", agrv[0]);
+	 (void)printf("%s\n", argv[0]);
 	return (0);
 }
