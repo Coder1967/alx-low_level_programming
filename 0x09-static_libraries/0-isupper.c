@@ -7,7 +7,7 @@ int _isupper(int c)
 {
 	int d;
 	d = isupper(c);
-	return (d);
+	return (1);
 }
 
 
