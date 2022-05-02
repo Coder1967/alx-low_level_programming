@@ -1,8 +1,4 @@
 #include <ctype.h>
-/**
- * _isupper - function
- * @c: var
- */
 int _isupper(int c)
 {
 	int d;
