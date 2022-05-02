@@ -5,8 +5,16 @@
  * @argv:argument vector
  * Return: 0
  */
-int main(int argc, char *agrv)
+int main(int argc, char *argv[])
 {
-	printf("%d\n", argc - 1);
+	int i;
+	int count = 0;
+
+	(void) argv;
+	for (i = 1; i < argc; i++)
+	{
+		count += 1;
+	}
+	printf("%d\n", count);
 	return (0);
 }
