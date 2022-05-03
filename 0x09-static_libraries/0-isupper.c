@@ -1,9 +1,6 @@
-#include <ctype.h>
+#include "main.h"
 int _isupper(int c)
 {
-	int d;
-	d = isupper(c);
-	return (1);
 }
 
 
