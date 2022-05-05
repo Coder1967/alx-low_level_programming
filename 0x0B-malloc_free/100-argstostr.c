@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * argostr - function
+ * argstostr - function
  * @ac: var1
  * @av: var2
  * Return: value
