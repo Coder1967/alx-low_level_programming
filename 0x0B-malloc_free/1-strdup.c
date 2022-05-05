@@ -19,14 +19,15 @@ char *_strdup(char *str)
 			{
 				i++;
 			}
+
 			ptr = (char *) malloc((sizeof(char) * i) + 1);
-			if (s == NULL)
+			if (ptr == NULL)
 				return (NULL);
 			
 			while (k < i)
 			{
-				s[a] = str[a];										k++;
+				ptr[k] = str[k];										k++;
 			}
-			s[k] = '\0';
-			return (s);
+			ptr[k] = '\0';
+			return (ptr);
 }
