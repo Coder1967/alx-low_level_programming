@@ -21,9 +21,10 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	for (n = 0; n <= i; n++)
+	for (n = 0; n < i; n++)
 	{
 		ptr[n] = str[n];
 	}
+	ptr[i] = '\0';
 	return (ptr);
 }
