@@ -3,15 +3,14 @@
 /**
  * _strdup - function
  * @str: variable
+ * Return: string copy
  */
 char *_strdup(char *str)
-
 {
 
 		int k = 0, i = 1;
 
 			char *ptr;
-			
 			if (str == NULL)
 				return (NULL);
 			
