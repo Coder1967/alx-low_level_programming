@@ -4,7 +4,7 @@
  * @grid: var1
  * @height: var2
  */
- void free_grid(int **grid, int height)
+void free_grid(int **grid, int height)
 {
 	int i;
 
