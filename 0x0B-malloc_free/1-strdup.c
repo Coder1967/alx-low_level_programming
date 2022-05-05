@@ -13,7 +13,7 @@ char *_strdup(char *str)
 	{
 		i++;
 	}
-	ptr = (char *) malloc(100 * sizeof(char));
+	ptr = (char *) malloc((i * sizeof(char))) + 2;
 
 	for (n = 0; n < i; n++)
 	{
