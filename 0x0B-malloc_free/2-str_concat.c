@@ -7,7 +7,10 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *ptr; int i = 0, k = 0, m, n, l, q = 0;
+	char *ptr; int i = 0;
+       int k = 0; int m;
+       int n; int l; 
+       int q = 0;
 
 	while (s1[i] != '\0')
 	{
@@ -17,9 +20,8 @@ char *str_concat(char *s1, char *s2)
 	{
 		k++;
 	}
-	l = k + i + 1;
+        l = k + i + 1;
 	ptr = (char *) calloc(l, sizeof(char));
-
 	if (ptr == NULL)
 	{
 		return (NULL);
