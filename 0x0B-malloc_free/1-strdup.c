@@ -15,7 +15,7 @@ char *_strdup(char *str)
 		i++;
 	}
 
-	ptr = (char *) calloc(i, sizeof(char));
+	ptr = (char *) calloc(i, sizeof(char) + 1);
 	if (ptr == NULL)
 	{
 		return (NULL);
@@ -25,6 +25,6 @@ char *_strdup(char *str)
 	{
 		ptr[n] = str[n];
 	}
-	ptr[i] = '\0';
+	ptr[n] = '\0';
 	return (ptr);
 }
