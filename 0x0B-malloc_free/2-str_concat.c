@@ -1,6 +1,11 @@
 #include <stdlib.h>
-
-char *str_concat(char *s1, char *s2);
+/**
+ * str_concat - function
+ * @s1: variable 1
+ * @s2: variable 2
+ * Return: value
+ */
+char *str_concat(char *s1, char *s2)
 {
 	char *ptr; int i = 0, k = 0, m, n, q =0;
 
