@@ -1,9 +1,9 @@
-#include <stdio.h>
+#include "main.h"
 #include <stdlib.h>
 
 char *_strdup(char *str)
 {
-	char *ptr; int i, int n;
+	char *ptr; int i, n;
 
 	if (str == NULL)
 	{
@@ -15,13 +15,13 @@ char *_strdup(char *str)
 		i++;
 	}
 
-	ptr = (char *) malloc(i * sizeof(char));
+	ptr = (char *) calloc(i, sizeof(char));
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
 
-	for (n == 0; n <= i; n++)
+	for (n = 0; n <= i; n++)
 	{
 		ptr[n] = str[n];
 	}
