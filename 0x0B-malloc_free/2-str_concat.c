@@ -19,15 +19,14 @@ char *str_concat(char *s1, char *s2)
 		k++;
 	}
 	l = k + i + 1;
-
+	if (s1 != NULL && s2 != NULL)
+	{
 	ptr = (char *) calloc(l, sizeof(char));
 
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
-	if (s1 != NULL && s2 != NULL)
-	{
 	for (m = 0; m < i; m++)
 	{
 		ptr[m] = s1[m];
@@ -42,14 +41,24 @@ char *str_concat(char *s1, char *s2)
 	{
 		if (s2 == NULL)
 		{
-			for (m = 0; m < i; m++)
+			ptr = (char *) malloc(i * sizeof(char));
+			if (ptr == NULL)
+			{
+				return NULL;
+			}
+			for (m = 0; m <= i; m++)
 			{
 				ptr[m] = s1[m];
 			}
 		}
 		else if (s1 == NULL)
 		{
-			for (m = 0; m < k; m++)
+			ptr = (char *) calloc(k, sizeof(char));
+			if (ptr == NULL)
+			{
+				return NULL;
+			}
+			for (m = 0; m <= k; m++)
 			{
 				ptr[m] = s2[m];
 			}
