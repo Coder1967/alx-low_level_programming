@@ -4,6 +4,7 @@
  * create_array - function
  * @size: variable number 1
  * @c: variable number 2
+ * Return: char
  */
 char *create_array(unsigned int size, char c)
 {
@@ -25,7 +26,7 @@ char *create_array(unsigned int size, char c)
 	}
 	if (ptr == NULL)
 	{
-		return ptr;
+		return NULL;
 	}
 	return ptr;
 }
