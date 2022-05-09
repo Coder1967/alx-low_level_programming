@@ -5,6 +5,7 @@
  * string_nconcat - function
  * @s1: variable
  * @s2: var 2
+ * @n: var3
  * Return: result
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
