@@ -4,7 +4,7 @@
 /**
  * string_nconcat - function
  * @s1: variable
- * @s2: var 2
+ * @s2: var2
  * @n: var3
  * Return: result
  */
@@ -17,14 +17,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	int k = 0;
 	char *p;
 
-	if (s1 == NULL)
-	{
-		s1 = "";
-	}
-	if (s2 == NULL)
-	{
-		s2 = "";
-	}
 	i = strlen(s1);
 	total += i;
 	y = strlen(s2);
