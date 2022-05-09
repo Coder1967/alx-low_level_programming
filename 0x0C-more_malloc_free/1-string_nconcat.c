@@ -12,24 +12,21 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	int total = 0;
 	int b = 0;
-	int i = 0;
-	int y = 0;
-	int k = 0;
+	int i = 0, k = 0, y = 0;
 	char *p;
-
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+	if (s1 == NULL)
+	{
+		s2 = "";
+	}
 	i = strlen(s1);
 	total += i;
 	y = strlen(s2);
 	total += y + 1;
 	p = (char *) malloc(sizeof(char) * total);
-	if (s1 == NULL)
-	{
-		s1 = "";
-	}
-	if(s2 == NULL)
-	{
-		s1 = "";
-	}
 	if (p == NULL)
 	{
 		return (NULL);
