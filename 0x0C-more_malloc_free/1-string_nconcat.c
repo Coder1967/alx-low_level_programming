@@ -28,10 +28,21 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		p[b] = s1[b];
 	}
+	if (n <= 12)
+	{
 	for (b = i; b <= ((int) n + i); b++)
 	{
 		p[b] = s2[k];
 		k++;
+	}
+	}
+	else
+	{
+		for (b = i; b <= 12 + i; b++)
+		{
+			p[b] = s1[k];
+			k++;
+		}
 	}
 	p[b - 1] = '\0';
 	return (p);
