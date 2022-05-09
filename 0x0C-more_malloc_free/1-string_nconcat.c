@@ -29,7 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		p[b] = s1[b];
 	}
-	if (n < 10)
+	if (n < 11)
 	{
 	for (b = i; b <= ((int) n + i); b++)
 	{
