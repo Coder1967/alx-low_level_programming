@@ -10,15 +10,15 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int *p;
 
-	if (nmemb == NULL)
+	if (nmemb == 0)
 	{
 		return (NULL);
 	}
-	if (size == NULL)
+	if (size == 0)
 	{
 		return (NULL);
 	}
-	p = (int *) malloc(size, nmemb);
+	p = (int *) calloc(nmemb, size);
 	if (p == NULL)
 	{
 		return (NULL);
