@@ -1,4 +1,8 @@
-imple_print_buffer(int *buffer, unsigned int size)
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+void simple_print_buffer(int *buffer, unsigned int size)
 
 {
 
