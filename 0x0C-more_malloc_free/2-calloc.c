@@ -4,6 +4,7 @@
  * _calloc - function
  * @nmemb: number of lements
  * @size: size in bytes
+ * Return: 0
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
@@ -23,4 +24,4 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
        return (p);
-
+}
