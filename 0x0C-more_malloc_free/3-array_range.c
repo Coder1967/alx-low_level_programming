@@ -21,7 +21,7 @@ int *array_range(int min, int max)
 	}
 	for (i = min; i <= max; i++)
 	{
-		p[0] = i;
+		p[k] = i;
 	}
 
 	return (p);
