@@ -10,9 +10,8 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int total = 0;
-	int k = 0, y, b = 0, i;
 	char *p;
+	int k = 0, y, b = 0, i, total = 0;
 
 	if (s1 == NULL)
 	{
