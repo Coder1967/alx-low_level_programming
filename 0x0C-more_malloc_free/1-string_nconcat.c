@@ -10,8 +10,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *p;
-	int k = 0, y, b = 0, i, total = 0;
+	int k = 0, y, b = 0, i, total = 0; char *p;
 
 	if (s1 == NULL)
 	{
@@ -24,7 +23,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	i = strlen(s1);
 	y = strlen(s2);
 	total = (i + y) + 1;
-	p = (char *) realloc(NULL, sizeof(char) * total);
+	p = (char *) calloc(sizeof(char), total);
 	if (p == NULL)
 	{
 		return (NULL);
