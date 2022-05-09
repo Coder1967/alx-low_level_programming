@@ -26,6 +26,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s1 = "";
 	}
+	if(s2 == NULL)
+	{
+		s1 = "";
+	}
 	if (p == NULL)
 	{
 		return (NULL);
