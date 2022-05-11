@@ -6,7 +6,6 @@
  * @age: age of dog
  * @owner of dog
  */
-#define struct dog
 struct dog
 {
 	char *name;
