@@ -19,8 +19,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	else
 	{
 	ptr->name = name;
-	ptr->age = age;
 	ptr->owner = owner;
 	}
-	return *(ptr);
+	return (ptr);
 }
