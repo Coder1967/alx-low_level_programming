@@ -4,7 +4,7 @@
  * struct dog - template for dogs
  * @name: name of dog
  * @age: age of dog
- * @owner of dog
+ * @owner: of dog
  */
 struct dog
 {
