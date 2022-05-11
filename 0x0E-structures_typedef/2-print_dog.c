@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "dog.h"
+#include <math.h>
 /**
  * print_dog - function that prints struct value
  * @d: a ponter of type struct containing the adress of a struct
@@ -11,7 +12,7 @@ void print_dog(struct dog *d)
 	{
 		printf("Name: (nil)\n");
 	}
-	else if (d->age == NULL)
+	else if (isnan(d->age))
 	{
 		printf("Age: (nil)\n");
 	}
