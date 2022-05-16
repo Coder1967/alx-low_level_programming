@@ -10,8 +10,6 @@
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	if (separator != NULL)
-	{
 		int i;
 		char *x;
 		va_list args;
@@ -28,9 +26,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			{
 				printf("%s", x);
 			}
+			if (separator != NULL)
+			{
 			if (i != (n - 1))
 			{
 				printf("%s", separator);
+			}
 			}
 		}
 		va_end(args);
