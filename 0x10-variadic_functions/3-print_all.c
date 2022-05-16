@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <string.h>
+/**
+ * print_all - function to print out value of any data type
+ * @format: placeholder for data value
+ * Return: nothing(void)
+ */
 void print_all(const char * const format, ...)
 {
 	int i = 0, s = strlen(format), x;
