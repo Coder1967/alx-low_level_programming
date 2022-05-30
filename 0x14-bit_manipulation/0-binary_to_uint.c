@@ -12,13 +12,13 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int tmp = 0, total = 0, count = 0;
 	unsigned int i = 0, len = strlen(b);
 
-	if (b != NULL)
-	{
 	for (j = 0; j < len; j++)
 	{
 		if (b[j] == '0' || b[j] == '1')
 			count++;
 	}
+	if (b != NULL)
+	{
 	while (n != 0)
 	{
 		tmp = n % 10;
