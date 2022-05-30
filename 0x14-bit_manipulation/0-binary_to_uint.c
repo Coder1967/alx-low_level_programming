@@ -17,8 +17,12 @@ unsigned int binary_to_uint(const char *b)
 		if (b[j] == '0' || b[j] == '1')
 			count++;
 	}
-	if (b != NULL)
+
+	if (b == NULL)
 	{
+		return (0);
+	}
+
 	while (n != 0)
 	{
 		tmp = n % 10;
@@ -31,6 +35,8 @@ unsigned int binary_to_uint(const char *b)
 	{
 		return (total);
 	}
+	else
+	{
+		return (0);
 	}
-	return (0);
 }
