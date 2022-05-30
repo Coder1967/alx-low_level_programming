@@ -12,6 +12,9 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int tmp = 0, total = 0, count = 0;
 	unsigned int i = 0, len = strlen(b);
 
+	if (b == NULL)
+		return (0);
+
 	for (j = 0; j < len; j++)
 	{
 		if (b[j] == '0' || b[j] == '1')
@@ -25,7 +28,7 @@ unsigned int binary_to_uint(const char *b)
 		n = n / 10;
 		i++;
 	}
-	if (count == len && b != NULL)
+	if (count == len)
 	{
 		return (total);
 	}
