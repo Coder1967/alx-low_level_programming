@@ -24,7 +24,7 @@ int append_text_to_file(const char *filename, char *text_content)
 		close(fd);
 		return (1);
 	}
-	write(sd, text_content, strlen(text_content) * sizeof(char));
+	write(fd, text_content, strlen(text_content) * sizeof(char));
 	close(fd);
 	return (1);
 }
