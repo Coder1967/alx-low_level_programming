@@ -21,15 +21,15 @@ int main(int argc, char *argv[])
 		write(2, "Usage: cp file_from file_to\n", 29);
 		exit(97);
 	}
-	fd1 = open(argv[1], O_RDONLY | O_TRUNC, 0600);
+	fd1 = open(argv[1], O_RDWR, 0666);
+	rd = read(fd1, buf, 1024);
 	if (fd1 == -1)
 	{
 		dprintf(2, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	rd = read(fd1, buf, 1024);
-	fd2 = open(argv[2], O_CREAT | O_WRONLY, 0644);
-	sd = write(fd2, buf, rd);
+	fd2 = open(argv[2], O_CREAT | O_RDWR | O_TRUNC, 0644);
+	sd = write(fd2, buf, rd + 1);
 	if (fd2 == -1 || sd == -1)
 	{
 		dprintf(2, "Error: Can't write to %s\n", argv[2]);
@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 
 	if (cd == -1)
 	{
-		dprintf(2, "Error: Can't close fd %d\n", fd);
+		dprintf(2, "Error: Can't close fd %d\n", fd2);
 		exit(100);
 	}
 	return (0);
