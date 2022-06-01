@@ -29,7 +29,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		sz = read(fd, buf, letters);
 		buf[letters] = '\0';
 		close(fd);
-		if (sizeof(buf - 1) != letters)
+		if (sizeof(buf) != letters)
 		{
 			free(buf);
 			return (0);
