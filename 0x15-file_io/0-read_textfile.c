@@ -28,9 +28,10 @@
 	if (sz == -1)
 		return (0);
 	buf[sz] = '\0';
-	oz = write(1, buf, sz);
+	Sz = write(1, buf, sz);
 	if (Sz == -1)
 		return (0);
 	close(fd);
-	return (oz);
+	return (Sz);
 }
+
