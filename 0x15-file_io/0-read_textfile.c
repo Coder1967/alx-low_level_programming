@@ -29,13 +29,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		}
 		sz = read(fd, buf, letters);
 		buf[letters] = '\0';
-		close(fd);
 		if (strlen(buf) != letters)
 		{
 			free(buf);
 			return (0);
 		}
 		write(1, buf, sizeof(buf));
+		close(fd);
 		return (sz);
 		free(buf);
 	}
