@@ -5,6 +5,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <stddef.h>
+#include <string.h>
 /**
  * read_textfile - function to read from a file and print it to
  * standard output
@@ -18,10 +19,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		ssize_t sz;
 		int fd;
-		char *buf = malloc((letters)+1);
-		
+		char *buf = malloc((letters) + 1);
 		fd = open(filename, O_RDONLY);
-		if (fd == 0)
+
+		if (fd == -1)
 		{
 			free(buf);
 			return (0);
@@ -29,7 +30,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		sz = read(fd, buf, letters);
 		buf[letters] = '\0';
 		close(fd);
-		if (sizeof(buf) != letters)
+		if (strlen(buf) != letters)
 		{
 			free(buf);
 			return (0);
