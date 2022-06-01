@@ -3,6 +3,7 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <stdlib.h>
+#include <string.h>
 #include "main.h"
 /**
  * append_text_to_file - function to append to a file
