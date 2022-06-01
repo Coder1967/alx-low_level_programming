@@ -13,7 +13,7 @@
  * @letters: amount of letters in file
  * Return: amount of numbers read
  */
-         ssize_t read_textfile(const char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd, sz, Sz;
 	char *buf = malloc(sizeof(char) * letters);
