@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	fd2 = open(argv[2], O_CREAT | O_RDWR | O_TRUNC, 0644);
-	sd = write(fd2, buf, rd + 1);
+	sd = write(fd2, buf, rd);
 	if (fd2 == -1 || sd == -1)
 	{
 		dprintf(2, "Error: Can't write to %s\n", argv[2]);
