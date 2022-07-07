@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * add_dnodeint - function adds a node to the beginning of a
  * doubly_linked list
@@ -13,17 +14,15 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 
 	if (tmp == NULL)
 		return (NULL);
-	if (*head == NULL)
-	{
-		tmp->n = n;
-		*head = tmp;
-		tmp->prev = NULL;
-		tmp->next = NULL;
-		return (tmp);
-	}
 	tmp->n = n;
 	tmp->prev = NULL;
-	tmp->next = *head;
-	*head = tmp;
+	tmp->next = NULL;
+	if (*head == NULL)
+		*head = tmp;
+	else
+	{
+		tmp->next = *head;
+		*head = tmp;
+	}
 	return (tmp);
 }
