@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include "lists.h"
+#include <stdio.h>
 /**
  * insert_dnodeint_at_index - inserts node at index on a list
  * @h: address of pointer to the head node of the list
@@ -10,7 +11,7 @@
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *new = (dlistint_t *) malloc(sizeof(dlistint_t));
-	int size = 0, i;
+	unsigned int size = 0, i;
 	dlistint_t *tmp = *h;
 
 	if (*h == NULL)
