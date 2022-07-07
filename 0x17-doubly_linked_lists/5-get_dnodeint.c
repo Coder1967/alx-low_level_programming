@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include "lists.h"
 /**
  * get_dnode_at_index - function gets the address of the indexed
  * node starting count from 0
