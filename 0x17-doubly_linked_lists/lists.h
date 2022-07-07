@@ -6,6 +6,7 @@
  * @next: points to the next node
  * Description: doubly linked list node structure
  */
+#include <stddef.h>
 typedef struct dlistint_s
 {
 	int n;
