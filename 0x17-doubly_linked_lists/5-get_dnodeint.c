@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * get_dnode_at_index - function gets the address of the indexed
+ * get_dnodeint_at_index - function gets the address of the indexed
  * node starting count from 0
  * @head: pointer to head node
  * @index: the index of the node to be returned
