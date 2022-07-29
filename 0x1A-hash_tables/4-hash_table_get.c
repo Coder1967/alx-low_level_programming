@@ -12,7 +12,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	char *k = strdup(key);
 	hash_node_t *tmp;
 
-	if (ht == NULL)
+	if (ht == NULL || key == NULL || *k == '\0')
 		return (NULL);
 	tmp = ht->array[index];
 	while (tmp != NULL)
