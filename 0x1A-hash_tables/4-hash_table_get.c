@@ -2,7 +2,7 @@
 #include <string.h>
 /**
  * hash_table_get - uses the key to return a value
- * @ht - pointer to the hash table
+ * @ht: pointer to the hash table
  * @key: the key whose value is to be returned
  * Return: value(on success) and NULL(on failure)
  */
