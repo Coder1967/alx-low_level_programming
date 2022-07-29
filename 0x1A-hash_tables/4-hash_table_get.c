@@ -14,7 +14,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 	while (tmp != NULL)
 	{
-		if (strcmp(tmp->key, k) == 0)
+		if (strncmp(tmp->key, k, strlen(k)) == 0)
 		{
 			free(k);
 			return (tmp->value);
