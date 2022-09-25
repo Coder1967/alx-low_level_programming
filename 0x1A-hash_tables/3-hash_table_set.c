@@ -63,7 +63,6 @@ void col_resolute(hash_table_t *ht,
 	unsigned int index = key_index((unsigned const char *)key, ht->size);
 
 	tmp = ht->array[index];
-	tmp->next = NULL;
 	ht->array[index] = new_node;
 	ht->array[index]->key = (char *)key;
 	ht->array[index]->value = (char *)value;
