@@ -28,10 +28,12 @@ int recurse_binary(int *array, size_t left, size_t right, int value)
 	int mid;
 	size_t i;
 
-	printf("Searching in array:");
+	printf("Searching in array: ");
 	for (i = left; i <= right; i++)
 	{
 		printf("%d ", array[i]);
+		if (i != right)
+			printf(", ");
 	}
 	printf("\n");
 	if (right >= left)
