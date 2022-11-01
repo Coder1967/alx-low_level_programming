@@ -28,16 +28,16 @@ int recurse_binary(int *array, size_t left, size_t right, int value)
 	int mid;
 	size_t i;
 
-	printf("Searching in array: ");
-	for (i = left; i <= right; i++)
-	{
-		printf("%d", array[i]);
-		if (i != right)
-			printf(", ");
-	}
-	printf("\n");
 	if (right >= left)
 	{
+		printf("Searching in array: ");
+		for (i = left; i <= right; i++)
+		{
+			printf("%d", array[i]);
+			if (i != right)
+				printf(", ");
+		}
+		printf("\n");
 		mid = left + (right - left) / 2;
 		if (array[mid] == value)
 		{
